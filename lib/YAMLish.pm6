@@ -190,7 +190,7 @@ grammar Grammar {
 	regex inline-plain {
 		$<value> = [
 			<.plainfirst> :
-			[ <-[\x0a\x0d\:\,\[\]\{\}]> | ':' <!break> ]*
+			[ <-[\x0a\x0d\:\,\[\]]> | ':' <!break> ]*
 			<!after <.space>> :
 		]
 		<.space>*
