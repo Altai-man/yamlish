@@ -274,6 +274,7 @@ grammar Grammar {
 		| <value=alias>
 		| <value=datetime>
 		| <value=date>
+		| <value=inline-plain>
 		]
 	}
 
@@ -281,11 +282,11 @@ grammar Grammar {
 		<properties>?
 
 		[
-		| <value=inline-atom>
-		| <value=inline-map>
-		| <value=inline-list>
-		| <value=single-quoted>
-		| <value=double-quoted>
+		|| <value=inline-map>
+		|| <value=inline-list>
+		|| <value=inline-atom>
+		|| <value=single-quoted>
+		|| <value=double-quoted>
 		]
 	}
 
